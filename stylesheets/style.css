@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.separator {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.separator div {
+  background-color: #007745;
+  height: 2px;
+  width: 70%;
+}
+
+nav {
+  background-color: #007745;
+  height: 60px;
+}
+nav div {
+  height: 60px;
+}
+nav img {
+  height: 100%;
+  margin-left: 10px;
+}
+nav .nav-options div, nav a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav-options div a, nav a a {
+  cursor: pointer;
+  height: 55%;
+  width: 120px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+nav .nav-options div a:hover, nav a a:hover {
+  background-color: #015834;
+  box-shadow: 3px 3px 1px black;
+  translate: -3px -3px;
+}
+nav .nav-options div p, nav a p {
+  margin: 0px;
+}
+nav .nav-idiom div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav-idiom div img {
+  cursor: pointer;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  transition: 0.3s ease;
+}
+nav .nav-idiom div img:hover {
+  transform: scale(1.3);
+}
+
+footer {
+  background-color: #007745;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div img {
+  cursor: pointer;
+  width: 40px;
+  transition: 0.3s ease;
+}
+footer div img:hover {
+  transform: scale(1.3);
+}
+footer .info-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+footer .info-footer p {
+  margin: 0;
+  font-size: 14px;
+}
+footer .info-footer img {
+  margin-top: -10px;
+  width: 230px;
+}
+
+/*# sourceMappingURL=style.css.map */

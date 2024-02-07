@@ -145,6 +145,32 @@ section .text-zone .text-img p:nth-child(3) {
 article {
   height: 300px;
 }
+article div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+article div:nth-child(1) {
+  height: 200px;
+}
+article div:nth-child(1) .op-container {
+  flex-direction: column;
+  height: 100%;
+  margin: 10px;
+}
+article div:nth-child(1) .op-container .opinion {
+  width: 200px;
+  height: 50%;
+  background-color: #007745;
+  border-radius: 25px;
+}
+article div:nth-child(1) .op-container img {
+  width: 200px;
+  padding-top: 20px;
+}
+article div:nth-child(2) {
+  height: 100px;
+}
 
 footer {
   background-color: #007745;

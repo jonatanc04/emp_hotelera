@@ -11,6 +11,16 @@ body, html {
   height: 100%;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.container-fluid {
+  padding-top: 60px;
+}
+
 .separator, nav, footer {
   display: flex;
   justify-content: center;
@@ -20,6 +30,10 @@ body, html {
     background-color: #007745;
     height: 2px;
     width: 70%;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 

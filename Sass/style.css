@@ -39,6 +39,103 @@ nav {
   height: 40px;
 }
 
+.background {
+  background-size: cover;
+  background-position-y: 60%;
+}
+
+.back-playa {
+  background-image: url("../imgs/playa.jpg");
+}
+
+.back-mount {
+  background-image: url("../imgs/montanya.jpg");
+}
+
+.hotel-img {
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+}
+
+.mountain-hotel {
+  background-image: url("../imgs/pinnacle.jpg");
+}
+
+.playa-hotel {
+  background-image: url("../imgs/myrwn.jpg");
+}
+
+.desc-hotel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.desc-hotel h1 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.desc-hotel .location {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+.desc-hotel .mountain-loc {
+  background-image: url("../imgs/loc_mount.PNG");
+}
+.desc-hotel .playa-loc {
+  background-image: url("../imgs/loc_play.PNG");
+}
+.desc-hotel .text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #007745;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  box-shadow: 6px 6px 10px black;
+}
+.desc-hotel .text-box p {
+  font-size: 17px;
+  text-align: justify;
+  width: 90%;
+  margin: 20px;
+}
+
+.cont-habit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+.cont-habit .section-hab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #007745;
+  border-radius: 20px;
+  margin: 5px;
+  height: 200px;
+  transition: 0.3s ease;
+}
+.cont-habit .section-hab:hover {
+  transform: scale(1.2, 1.2) rotate(5deg);
+  box-shadow: 0px 0px 10px;
+}
+.cont-habit .section-hab div {
+  width: 49%;
+  height: 90%;
+}
+.cont-habit .section-hab div:nth-child(1) {
+  border-radius: 20px;
+  background-color: red;
+}
+
 nav {
   background-color: #007745;
   height: 60px;

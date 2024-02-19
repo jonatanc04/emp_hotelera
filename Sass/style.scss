@@ -132,6 +132,29 @@ nav {
     height: 200px;
     transition: 0.3s ease;
 
+    .precioNoche {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(144, 216, 183);
+      border-radius: 15px;
+      height: 40px;
+      width: 120px;
+      margin-top: 130px;
+      p {
+        color: black;
+        width: fit-content;
+        &:first-child {
+          font-size: 30px;
+        }
+        &:last-child {
+          margin-left: 5px;
+          margin-top: 6px;
+        }
+      }
+    }
+
     &:hover {
       transform: scale(1.2,1.2) rotate(5deg);
       box-shadow: 0px 0px 10px;
@@ -186,13 +209,22 @@ nav {
   }
   
   @for $i from 1 through 4 {
-    .section-hab:nth-child(#{$i}) > div:first-child {
+    .section-hab:nth-child(#{$i}) > .mont-img {
       border-radius: 20px;
       background-position: center;
       background-size: cover;
       background-image: url('../imgs/mont-foto#{$i}.jpg');
     }
-  }  
+  }
+
+  @for $i from 1 through 4 {
+    .section-hab:nth-child(#{$i}) > .playa-img {
+      border-radius: 20px;
+      background-position: center;
+      background-size: cover;
+      background-image: url('../imgs/play-foto#{$i}.jpg');
+    }
+  } 
 }
 
 nav {
@@ -388,6 +420,17 @@ article {
       margin-bottom: 0px;
       font-size: 25px;
     }
+  }
+}
+
+.cuerpo-formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    width: fit-content;
   }
 }
 

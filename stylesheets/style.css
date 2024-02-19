@@ -123,6 +123,28 @@ nav {
   height: 200px;
   transition: 0.3s ease;
 }
+.cont-habit .section-hab .precioNoche {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(144, 216, 183);
+  border-radius: 15px;
+  height: 40px;
+  width: 120px;
+  margin-top: 130px;
+}
+.cont-habit .section-hab .precioNoche p {
+  color: black;
+  width: fit-content;
+}
+.cont-habit .section-hab .precioNoche p:first-child {
+  font-size: 30px;
+}
+.cont-habit .section-hab .precioNoche p:last-child {
+  margin-left: 5px;
+  margin-top: 6px;
+}
 .cont-habit .section-hab:hover {
   transform: scale(1.2, 1.2) rotate(5deg);
   box-shadow: 0px 0px 10px;
@@ -178,29 +200,53 @@ nav {
     transform: scale(1.2, 0.9);
   }
 }
-.cont-habit .section-hab:nth-child(1) > div:first-child {
+.cont-habit .section-hab:nth-child(1) > .mont-img {
   border-radius: 20px;
   background-position: center;
   background-size: cover;
   background-image: url("../imgs/mont-foto1.jpg");
 }
-.cont-habit .section-hab:nth-child(2) > div:first-child {
+.cont-habit .section-hab:nth-child(2) > .mont-img {
   border-radius: 20px;
   background-position: center;
   background-size: cover;
   background-image: url("../imgs/mont-foto2.jpg");
 }
-.cont-habit .section-hab:nth-child(3) > div:first-child {
+.cont-habit .section-hab:nth-child(3) > .mont-img {
   border-radius: 20px;
   background-position: center;
   background-size: cover;
   background-image: url("../imgs/mont-foto3.jpg");
 }
-.cont-habit .section-hab:nth-child(4) > div:first-child {
+.cont-habit .section-hab:nth-child(4) > .mont-img {
   border-radius: 20px;
   background-position: center;
   background-size: cover;
   background-image: url("../imgs/mont-foto4.jpg");
+}
+.cont-habit .section-hab:nth-child(1) > .playa-img {
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../imgs/play-foto1.jpg");
+}
+.cont-habit .section-hab:nth-child(2) > .playa-img {
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../imgs/play-foto2.jpg");
+}
+.cont-habit .section-hab:nth-child(3) > .playa-img {
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../imgs/play-foto3.jpg");
+}
+.cont-habit .section-hab:nth-child(4) > .playa-img {
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../imgs/play-foto4.jpg");
 }
 
 nav {
@@ -365,6 +411,16 @@ article div:nth-child(2) p {
   height: fit-content;
   margin-bottom: 0px;
   font-size: 25px;
+}
+
+.cuerpo-formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cuerpo-formulario h1 {
+  width: fit-content;
 }
 
 footer {

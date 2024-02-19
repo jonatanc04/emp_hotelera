@@ -141,6 +141,48 @@ nav {
       width: 49%;
       height: 90%;
     }
+
+    div:last-child {
+      color: white;
+      h2 {
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+      }
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        overflow-y: auto;
+        
+        margin: 0px;
+        height: 60%;
+      }
+      a {
+        color: yellow;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h5:hover {
+          animation-timing-function: ease-out;
+          animation-name: rebote;
+          animation-duration: 1s;
+          animation-direction: alternate;
+        }
+        
+        @keyframes rebote {
+            0%, 100%  { transform: scale(1, 1); }
+            20% { transform: scale(1.5, 0.8); }
+            40% { transform: scale(1.5, 0.8);}
+            60% { transform: scale(0.5, 1);}
+            80% { transform: scale(1.2, 0.9);}
+        }
+      }
+    }
+
   }
   
   @for $i from 1 through 4 {

@@ -39,6 +39,170 @@ nav {
   height: 40px;
 }
 
+.background {
+  background-size: cover;
+  background-position-y: 60%;
+}
+
+.back-playa {
+  background-image: url("../imgs/playa.jpg");
+}
+
+.back-mount {
+  background-image: url("../imgs/montanya.jpg");
+}
+
+.hotel-img {
+  height: 750px;
+  background-size: cover;
+  background-position: center;
+}
+
+.mountain-hotel {
+  background-image: url("../imgs/pinnacle.jpg");
+}
+
+.playa-hotel {
+  background-image: url("../imgs/myrwn.jpg");
+}
+
+.desc-hotel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.desc-hotel h1 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.desc-hotel .location {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+.desc-hotel .mountain-loc {
+  background-image: url("../imgs/loc_mount.PNG");
+}
+.desc-hotel .playa-loc {
+  background-image: url("../imgs/loc_play.PNG");
+}
+.desc-hotel .text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #007745;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  box-shadow: 6px 6px 10px black;
+}
+.desc-hotel .text-box p {
+  font-size: 17px;
+  text-align: justify;
+  width: 90%;
+  margin: 20px;
+}
+
+.cont-habit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+.cont-habit .section-hab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #007745;
+  border-radius: 20px;
+  margin: 5px;
+  height: 200px;
+  transition: 0.3s ease;
+}
+.cont-habit .section-hab:hover {
+  transform: scale(1.2, 1.2) rotate(5deg);
+  box-shadow: 0px 0px 10px;
+}
+.cont-habit .section-hab div {
+  width: 49%;
+  height: 90%;
+}
+.cont-habit .section-hab div:last-child {
+  color: white;
+}
+.cont-habit .section-hab div:last-child h2 {
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+}
+.cont-habit .section-hab div:last-child p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  overflow-y: auto;
+  margin: 0px;
+  height: 60%;
+}
+.cont-habit .section-hab div:last-child a {
+  color: yellow;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont-habit .section-hab div:last-child a h5:hover {
+  animation-timing-function: ease-out;
+  animation-name: rebote;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+@keyframes rebote {
+  0%, 100% {
+    transform: scale(1, 1);
+  }
+  20% {
+    transform: scale(1.5, 0.8);
+  }
+  40% {
+    transform: scale(1.5, 0.8);
+  }
+  60% {
+    transform: scale(0.5, 1);
+  }
+  80% {
+    transform: scale(1.2, 0.9);
+  }
+}
+.cont-habit .section-hab:nth-child(1) > div:first-child {
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../imgs/mont-foto1.jpg");
+}
+.cont-habit .section-hab:nth-child(2) > div:first-child {
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../imgs/mont-foto2.jpg");
+}
+.cont-habit .section-hab:nth-child(3) > div:first-child {
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../imgs/mont-foto3.jpg");
+}
+.cont-habit .section-hab:nth-child(4) > div:first-child {
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../imgs/mont-foto4.jpg");
+}
+
 nav {
   background-color: #007745;
   height: 60px;

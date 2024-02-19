@@ -141,12 +141,16 @@ nav {
       width: 49%;
       height: 90%;
     }
-
-    div:nth-child(1) {
-      border-radius: 20px;
-      background-color: red;
-    }
   }
+  
+  @for $i from 1 through 4 {
+    .section-hab:nth-child(#{$i}) > div:first-child {
+      border-radius: 20px;
+      background-position: center;
+      background-size: cover;
+      background-image: url('../imgs/mont-foto#{$i}.jpg');
+    }
+  }  
 }
 
 nav {

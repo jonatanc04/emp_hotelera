@@ -422,6 +422,111 @@ article div:nth-child(2) p {
 .cuerpo-formulario h1 {
   width: fit-content;
 }
+.cuerpo-formulario .img-hotel {
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+.cuerpo-formulario h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.cuerpo-formulario .info-adicional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cuerpo-formulario .info-adicional div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cuerpo-formulario .info-adicional div p {
+  width: 100%;
+  border: 2px dotted #007745;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.cuerpo-formulario .info-adicional div button {
+  color: white;
+  margin-top: 20px;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #007745;
+  border: none;
+  transition: 0.3s ease;
+}
+.cuerpo-formulario .info-adicional div button:hover {
+  background-color: #015834;
+  box-shadow: 3px 3px 1px black;
+  translate: -3px -3px;
+}
+.cuerpo-formulario .p1 {
+  background-image: url("../imgs/play-foto1.jpg");
+}
+.cuerpo-formulario .p2 {
+  background-image: url("../imgs/play-foto2.jpg");
+}
+.cuerpo-formulario .p3 {
+  background-image: url("../imgs/play-foto3.jpg");
+}
+.cuerpo-formulario .p4 {
+  background-image: url("../imgs/play-foto4.jpg");
+}
+.cuerpo-formulario .parte {
+  min-height: 55vh;
+}
+.cuerpo-formulario .parte .calendar {
+  padding: 20px;
+  text-align: center;
+}
+.cuerpo-formulario .parte .calendar .weekdays {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.cuerpo-formulario .parte .calendar .weekdays div {
+  width: 14.2857142857%;
+}
+.cuerpo-formulario .parte .calendar .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding: 10px 0;
+}
+.cuerpo-formulario .parte .calendar .days .reserved {
+  cursor: unset;
+  color: white;
+  background-color: rgb(172, 34, 34);
+}
+.cuerpo-formulario .parte .calendar .days .pastonext {
+  cursor: unset;
+  color: white;
+  background-color: rgb(88, 88, 88);
+}
+.cuerpo-formulario .parte .calendar .days div {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20%;
+  background-color: #f0f0f0;
+}
+.cuerpo-formulario .parte .calendar .days div:not(.pastonext):not(.reserved):hover {
+  color: white;
+  background-color: #007745;
+}
+@media (max-width: 768px) {
+  .cuerpo-formulario .parte .calendar .weekdays div {
+    font-size: 12px;
+  }
+  .cuerpo-formulario .parte .calendar .days div {
+    font-size: 14px;
+  }
+}
 
 footer {
   background-color: #007745;

@@ -432,6 +432,131 @@ article {
   h1 {
     width: fit-content;
   }
+
+  .img-hotel {
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .info-adicional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        width: 100%;
+        border: 2px dotted #007745;
+        text-align: center;
+        border-radius: 20px;
+        margin-bottom: 5px;
+        padding: 5px;
+      }
+      button {
+        color: white;
+        margin-top: 20px;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #007745;
+        border: none;
+        transition: 0.3s ease;
+
+        &:hover {
+          background-color: #015834;
+          box-shadow: 3px 3px 1px black;
+          translate: -3px -3px;
+        }
+      }
+    }
+  }
+
+  .p1 {
+    background-image: url("../imgs/play-foto1.jpg");
+  }
+
+  .p2 {
+    background-image: url("../imgs/play-foto2.jpg");
+  }
+
+  .p3 {
+    background-image: url("../imgs/play-foto3.jpg");
+  }
+
+  .p4 {
+    background-image: url("../imgs/play-foto4.jpg");
+  }
+
+  .parte {
+    min-height: 55vh;
+
+    .calendar {
+      padding: 20px;
+      text-align: center;
+
+      .weekdays {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+      }
+        
+      .weekdays div {
+        width: calc(100% / 7);
+      }
+        
+      .days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+        padding: 10px 0;
+
+        .reserved {
+          cursor: unset;
+          color :white;
+          background-color: rgb(172, 34, 34);
+        }
+
+        .pastonext {
+          cursor: unset;
+          color :white;
+          background-color: rgb(88, 88, 88);
+        }
+      }
+        
+      .days div {
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 20%;
+        background-color: #f0f0f0;
+
+        &:not(.pastonext):not(.reserved):hover {
+          color: white;
+          background-color: #007745;
+        }
+      }
+        
+      @media (max-width: 768px) {
+        .weekdays div {
+            font-size: 12px;
+        }
+    
+        .days div {
+            font-size: 14px;
+        }
+      }
+    }
+  }
 }
 
 footer {

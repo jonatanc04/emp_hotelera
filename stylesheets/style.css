@@ -477,6 +477,18 @@ article div:nth-child(2) p {
 .cuerpo-formulario .p4 {
   background-image: url("../imgs/play-foto4.jpg");
 }
+.cuerpo-formulario .m1 {
+  background-image: url("../imgs/mont-foto1.jpg");
+}
+.cuerpo-formulario .m2 {
+  background-image: url("../imgs/mont-foto2.jpg");
+}
+.cuerpo-formulario .m3 {
+  background-image: url("../imgs/mont-foto3.jpg");
+}
+.cuerpo-formulario .m4 {
+  background-image: url("../imgs/mont-foto4.jpg");
+}
 .cuerpo-formulario .parte {
   min-height: 55vh;
 }

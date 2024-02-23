@@ -168,7 +168,7 @@ nav {
   text-align: justify;
   overflow-y: auto;
   margin: 0px;
-  height: 60%;
+  height: 80px;
 }
 .cont-habit .section-hab div:last-child a {
   color: yellow;
